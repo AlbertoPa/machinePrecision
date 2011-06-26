@@ -1,0 +1,15 @@
+Build instruction
+-----------------
+
+You need gcc installed on your system to proceed with the build process.
+
+Type "make" to build machinePrecision. 
+
+Usage
+-----
+
+Type
+
+./machinePrecision
+
+from inside the directory containing the executable.
