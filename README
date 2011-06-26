@@ -1,3 +1,13 @@
+Description
+-----------
+
+machinePrecision is a small code that provides the value of the machine
+epsilon. Two approaches are used
+
+- Printing the values obtained from float.h
+- Computing an approximated value of the machine epsilon. A templated function
+  is provided to perform this task.
+
 Build instruction
 -----------------
 

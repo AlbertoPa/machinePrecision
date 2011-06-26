@@ -42,7 +42,7 @@ T machPrecision(void)
 	{
 		epsilon /= (T)(2.0);
 	}
-	while ((T)(1.0 + epsilon/2.0) != 1.0);
+	while (((T)(1.0) + epsilon/2.0) != 1.0);
 
 	return epsilon;
 }
