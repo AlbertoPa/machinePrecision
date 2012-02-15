@@ -34,17 +34,17 @@ using namespace std;
 template <class T>
 T machPrecision(void)
 {
-	T epsilon;
+    T epsilon;
 
-	epsilon = (T)(1.0);
+    epsilon = (T)(1.0);
 
-	do
-	{
-		epsilon /= (T)(2.0);
-	}
-	while (((T)(1.0) + epsilon/2.0) != 1.0);
+    do
+    {
+        epsilon /= (T)(2.0);
+    }
+    while (((T)(1.0) + epsilon/2.0) != 1.0);
 
-	return epsilon;
+    return epsilon;
 }
 
 int main()
@@ -53,14 +53,14 @@ int main()
     cout << "-----------------" << endl;
 
     cout << "\nValues obtained from float.h:" << endl;
-	cout << "\nFloat       " << FLT_EPSILON << endl;
-	cout << "Double      " << DBL_EPSILON << endl;
-	cout << "Long double " << LDBL_EPSILON << endl;
+    cout << "\nFloat       " << FLT_EPSILON << endl;
+    cout << "Double      " << DBL_EPSILON << endl;
+    cout << "Long double " << LDBL_EPSILON << endl;
 
-	cout << "\nApproximated values computed on this machine:" << endl;
-	cout << "\nFloat       " << machPrecision<float>() << endl;
-	cout << "Double      " << machPrecision<double>() << endl;
-	cout << "Long double " << machPrecision<long double>() << endl;
+    cout << "\nApproximated values computed on this machine:" << endl;
+    cout << "\nFloat       " << machPrecision<float>() << endl;
+    cout << "Double      " << machPrecision<double>() << endl;
+    cout << "Long double " << machPrecision<long double>() << endl;
 
-	return 0;
+    return 0;
 }
